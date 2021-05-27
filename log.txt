@@ -1,0 +1,3 @@
+2021-05-26 12:37:39.918240 Try to go to class 數學
+th classroom
+2021-05-26 13:02:02.666025 Open the main.py

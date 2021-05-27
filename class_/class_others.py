@@ -1,3 +1,4 @@
+from datetime import datetime
 import meet
 
 meet_urls = {
@@ -14,6 +15,7 @@ meet_urls = {
     '多元選修':'https://meet.google.com/lookup/d3r2azaeym'
 }
 
+log = open('log.txt', 'r+', encoding='utf-8')
 class others:
     def __init__(self, subject, chrome):
         self.subject = subject
@@ -21,5 +23,6 @@ class others:
         
         meet_url = meet_urls[self.subject]
         self.chrome.get(meet_url)
+        log.write(str(datetime.now())+' Success to run class_others\n')
         meet.enter_meet(self.chrome)
         

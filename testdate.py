@@ -1,2 +1,2 @@
 from datetime import datetime
-print(datetime.now().strftime("%m/%d").replace('0', ''))
+print(datetime.today().strftime('%f'))
